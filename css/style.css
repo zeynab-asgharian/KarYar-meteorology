@@ -60,6 +60,7 @@ main .main-header .header-left {
     align-items: center;
     padding: 6px 0;
     text-align: center;
+    /* background-color: palevioletred; */
 }
 
 
@@ -73,18 +74,42 @@ main .main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: palegreen;
+    /* background-color: palegreen; */
+    gap: 20px;
 }
+
 
 
 
 main .main-content .main-right {
     width: 30%;
     height: 370px;
-    background-color: #08244f73;
-    border-radius: 15px;
+    /* background-color: #08244f73; */
     margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+main .main-content .main-right .right-header-icon {
+    width: 260px;
+}
+
+main .main-content .main-right .right-header-icon img {
+    width: 100%;
+}
+
+main .main-content .main-right .right-degree {
+    font-size: 29px;
+}
+
+main .main-content .main-right .right-max-min {
+    display: flex;
+    padding-top: 10px;
+    gap: 35px;
+}
+
 
 main .main-content .main-left {
     width: 67%;
@@ -93,6 +118,7 @@ main .main-content .main-left {
     border-radius: 15px;
     margin-left: 30px;
     padding: 10px 30px;
+
 }
 
 main .main-content .main-left .left-title {
@@ -111,7 +137,7 @@ main .main-content .main-left .left-title h6 {
 }
 
 main .main-content .main-left .left-content {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
     width: 100%;
     margin-top: 15px;
     display: flex;
@@ -119,30 +145,37 @@ main .main-content .main-left .left-content {
     justify-content: center;
     align-items: center;
 }
+
 main .main-content .main-left .left-content .item {
     width: 100%;
     height: 50px;
-    background-color: yellow;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* background-color: yellow; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
+}
+
+main .main-content .main-left .left-content .last-item {
+    border: none;
 }
 main .main-content .main-left .left-content .item .day {
     width: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
+
 main .main-content .main-left .left-content .item .weather {
     width: 50%;
-    background-color: #0f48b1;
+    /* background-color: #0f48b1; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 main .main-content .main-left .left-content .item .weather img {
     width: 40px;
 }
@@ -152,15 +185,17 @@ main .main-content .main-left .left-content .item .max {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: olive;
+    /* background-color: olive; */
 }
+
 main .main-content .main-left .left-content .item .min {
     width: 15%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: purple;
+    /* background-color: purple; */
 }
+
 /* background-footer */
 
 .background-footer {
@@ -173,24 +208,141 @@ main .main-content .main-left .left-content .item .min {
     bottom: 0;
 }
 
+@media (max-width:1100px) {
 
+
+    main .main-content .main-right{
+        margin-right: 10px;
+    }
+
+    main .main-content .main-left{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:767px) {
+
+    main .main-content .main-left {
+        padding: 10px;
+    }
+    main .main-content .main-right .right-header-icon {
+        width: 240px;
+    }
+
+}
+@media (max-width:680px) {
+    main {
+        height: 900px;
+    }
+    main .main-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .main-content .main-right {
+        width: 100%;
+    }
+    main .main-content .main-right .right-header-icon {
+        width: 290px;
+    }
+
+    main .main-content .main-right .right-max-min {
+        margin-bottom: 30px;
+    }
+    main .main-content .main-left {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+
+
+    .background-footer  {
+        bottom: -375px;
+    }
+}
 @media (max-width:600px) {
     main .main-header {
         font-size: 14px;
     }
 }
 
-@media (max-width:460px) {
+@media (max-width:465px) {
     main .main-header {
         flex-direction: column;
     }
 
-    main .main-header .item-right {
+    main .main-header .header-right {
         margin-bottom: 15px;
         width: 90%;
     }
 
-    main .main-header .item-left {
+    main .main-header .header-left {
         width: 90%;
+    }
+
+    main .main-content .main-left .left-content .item .weather {
+        width: 40%;
+    }
+    main .main-content .main-left .left-content .item .max  {
+        width: 20%;
+    }
+    main .main-content .main-left .left-content .item .min  {
+        width: 20%;
+    }
+}
+
+@media (max-width:410px) {
+
+
+
+    main .main-content .main-left .left-content .item .weather {
+        width: 35%;
+    }
+    main .main-content .main-left .left-content .item .day {
+        width: 20%;
+    }
+
+}
+
+
+@media (max-width:350px) {
+
+    main .main-content .main-right .right-header-icon {
+        width: 240px;
+    }
+    main .main-content .main-right .right-degree {
+        font-size: 26px;
+    }
+
+    main .main-content .main-right .right-max-min {
+font-size: 14px;
+    }
+    main .main-content .main-left .left-content .item {
+    font-size: 12px;
+}
+
+    main .main-content .main-left .left-content .item .weather {
+        width: 31%;
+    }
+    main .main-content .main-left .left-content .item .max {
+        width: 22%;
+    }
+    main .main-content .main-left .left-content .item .min {
+        width: 22%;
+    }
+}
+
+@media (max-width:320px) {
+    main .main-content .main-left .left-content .item .weather {
+        width: 28%;
+    }
+    main .main-content .main-left .left-content .item .day {
+        width: 22%;
+    }
+    main .main-content .main-left .left-content .item .max {
+        width: 24%;
+    }
+    main .main-content .main-left .left-content .item .min {
+        width: 24%;
     }
 }
