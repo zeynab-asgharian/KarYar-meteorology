@@ -48,9 +48,9 @@ main .main-header .header-right {
     border-radius: 17px;
     cursor: pointer;
 }
+
 main .main-header .header-right:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-
 }
 
 main .main-header .header-right i {
@@ -67,9 +67,11 @@ main .main-header .header-left {
     text-align: center;
     cursor: pointer;
 }
+
 main .main-header .header-left:hover {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
 /* main-content */
 main .main-content {
     width: 100%;
@@ -92,7 +94,6 @@ main .main-content .main-right {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
 }
 
 main .main-content .main-right .right-header-icon {
@@ -106,17 +107,21 @@ main .main-content .main-right .right-header-icon img {
 main .main-content .main-right .right-degree {
     font-size: 29px;
 }
+
 main .main-content .main-right .right-weather:hover{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
 main .main-content .main-right .right-max-min {
     display: flex;
     padding-top: 10px;
     gap: 35px;
 }
+
 main .main-content .main-right .right-max-min .max:hover {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
 main .main-content .main-right .right-max-min .min:hover {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
@@ -144,6 +149,7 @@ main .main-content .main-left .left-title h6 {
     font-size: 16px;
     font-weight: 100;
 }
+
 main .main-content .main-left .left-title:hover h6 {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
@@ -171,6 +177,7 @@ main .main-content .main-left .left-content .item {
 main .main-content .main-left .left-content .item span {
     margin-left: 5px;
 }
+
 main .main-content .main-left .left-content .last-item {
     border: none;
 }
@@ -181,9 +188,11 @@ main .main-content .main-left .left-content .item .day {
     justify-content: flex-start;
     align-items: center;
 }
+
 main .main-content .main-left .left-content .item .day:hover {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
 main .main-content .main-left .left-content .item .weather {
     width: 50%;
     display: flex;
@@ -201,18 +210,22 @@ main .main-content .main-left .left-content .item .max {
     justify-content: flex-end;
     align-items: center;
 }
+
 main .main-content .main-left .left-content .item .max:hover {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
 main .main-content .main-left .left-content .item .min {
     width: 15%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 main .main-content .main-left .left-content .item .min:hover {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
 /* background-footer */
 .background-footer {
     width: 100%;
@@ -270,6 +283,7 @@ main .main-content .main-left .left-content .item .min:hover {
     main .main-content .main-left {
         width: 100%;
         padding: 0 15px;
+        margin-top: 40px;
     }
 
     main .main-content .main-left .left-title {
