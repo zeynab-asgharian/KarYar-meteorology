@@ -60,6 +60,7 @@ main .main-header .header-left {
     align-items: center;
     padding: 6px 0;
     text-align: center;
+
 }
 
 /* main-content */
@@ -146,6 +147,9 @@ main .main-content .main-left .left-content .item {
     font-size: 14px;
 }
 
+main .main-content .main-left .left-content .item span {
+    margin-left: 5px;
+}
 main .main-content .main-left .left-content .last-item {
     border: none;
 }
