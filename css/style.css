@@ -46,6 +46,11 @@ main .main-header .header-right {
     align-items: center;
     border: 1px solid white;
     border-radius: 17px;
+    cursor: pointer;
+}
+main .main-header .header-right:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 main .main-header .header-right i {
@@ -60,9 +65,11 @@ main .main-header .header-left {
     align-items: center;
     padding: 6px 0;
     text-align: center;
-
+    cursor: pointer;
 }
-
+main .main-header .header-left:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
 /* main-content */
 main .main-content {
     width: 100%;
@@ -84,6 +91,8 @@ main .main-content .main-right {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
 }
 
 main .main-content .main-right .right-header-icon {
@@ -97,11 +106,19 @@ main .main-content .main-right .right-header-icon img {
 main .main-content .main-right .right-degree {
     font-size: 29px;
 }
-
+main .main-content .main-right .right-weather:hover{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
 main .main-content .main-right .right-max-min {
     display: flex;
     padding-top: 10px;
     gap: 35px;
+}
+main .main-content .main-right .right-max-min .max:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+main .main-content .main-right .right-max-min .min:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 main .main-content .main-left {
@@ -127,6 +144,9 @@ main .main-content .main-left .left-title h6 {
     font-size: 16px;
     font-weight: 100;
 }
+main .main-content .main-left .left-title:hover h6 {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
 
 main .main-content .main-left .left-content {
     width: 100%;
@@ -145,6 +165,7 @@ main .main-content .main-left .left-content .item {
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
+    cursor: pointer;
 }
 
 main .main-content .main-left .left-content .item span {
@@ -160,7 +181,9 @@ main .main-content .main-left .left-content .item .day {
     justify-content: flex-start;
     align-items: center;
 }
-
+main .main-content .main-left .left-content .item .day:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
 main .main-content .main-left .left-content .item .weather {
     width: 50%;
     display: flex;
@@ -178,14 +201,18 @@ main .main-content .main-left .left-content .item .max {
     justify-content: flex-end;
     align-items: center;
 }
-
+main .main-content .main-left .left-content .item .max:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
 main .main-content .main-left .left-content .item .min {
     width: 15%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-
+main .main-content .main-left .left-content .item .min:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
 /* background-footer */
 .background-footer {
     width: 100%;
@@ -243,6 +270,10 @@ main .main-content .main-left .left-content .item .min {
     main .main-content .main-left {
         width: 100%;
         padding: 0 15px;
+    }
+
+    main .main-content .main-left .left-title {
+        margin-top: 15px;
     }
 
     .background-footer {
