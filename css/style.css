@@ -108,7 +108,7 @@ main .main-content .main-right .right-degree {
     font-size: 29px;
 }
 
-main .main-content .main-right .right-weather:hover{
+main .main-content .main-right .right-weather:hover {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -259,7 +259,7 @@ main .main-content .main-left .left-content .item .min:hover {
 
 @media (max-width:680px) {
     main {
-        height: 900px;
+        height: 965px;
     }
 
     main .main-content {
@@ -270,6 +270,8 @@ main .main-content .main-left .left-content .item .min:hover {
 
     main .main-content .main-right {
         width: 100%;
+        margin: 0;
+
     }
 
     main .main-content .main-right .right-header-icon {
@@ -281,9 +283,9 @@ main .main-content .main-left .left-content .item .min:hover {
     }
 
     main .main-content .main-left {
-        width: 100%;
+        width: 98%;
         padding: 0 15px;
-        margin-top: 40px;
+        margin: 40px auto 0 auto;
     }
 
     main .main-content .main-left .left-title {
@@ -291,7 +293,7 @@ main .main-content .main-left .left-content .item .min:hover {
     }
 
     .background-footer {
-        bottom: -375px;
+        bottom: -445px;
     }
 }
 
